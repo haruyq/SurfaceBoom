@@ -47,8 +47,7 @@ namespace SurfaceBloomEventHandler
                     {
                         Exiled.API.Features.Cassie.MessageTranslated(
                         message: "pitch_0.15 .g4 pitch_0.2 jam_099_2 .g1 pitch_0.15 .g4 pitch_0.25 jam_099_2 .g1 pitch_0.15 .g4 pitch_0.25 jam_099_2 .g1 pitch_0.6 . .g4 . .g4 . .g4",
-                        translation: "<color=red><< 警告地上爆破シーケンスが開始されます。 >></color>");
-                        Exiled.API.Features.Map.Broadcast(5, message:"<size=75%><color=red><< 警告。地上爆破シーケンスが開始されます。 >></color></size>");
+                        translation: "<color=red><< 警告。地上爆破シーケンスが開始されます。 >></color>");
                     }
                 });
 
