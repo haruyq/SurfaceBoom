@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Exiled;
 using Exiled.API.Interfaces;
 
-namespace SurfaceBloomConfig
+namespace SurfaceBoomConfig
 {
     public class Config : IConfig
     {

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Random = System.Random;
 
-namespace SurfaceBloom
+namespace SurfaceBoom
 {
     public class warhead
     {
@@ -45,8 +45,7 @@ namespace SurfaceBloom
 
             if (Round.InProgress == false)
             {
-                Cassie.MessageTranslated("", "");
-                Map.Broadcast(5, message: "<size=50%><color=red><< 地上爆破シーケンスが終了しました。 >></color></size>");
+                Cassie.Message("<color=red>地上の爆破シーケンスが終了しました。</color>");
             }
         }
     }

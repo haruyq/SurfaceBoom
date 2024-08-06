@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Exiled.API.Features;
 using Exiled;
 using Exiled.Events.Handlers;
-using SurfaceBloomConfig;
+using SurfaceBoomConfig;
 using MEC;
-using SurfaceBloom;
+using SurfaceBoom;
 using UnityEngine;
 
 
-namespace SurfaceBloomEventHandler
+namespace SurfaceBoomEventHandler
 {
     public class EventHandler
     {
