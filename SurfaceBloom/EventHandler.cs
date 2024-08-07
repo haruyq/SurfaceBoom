@@ -17,27 +17,32 @@ namespace SurfaceBoomEventHandler
     public class EventHandler
     {
         public static bool IsEventEnabled { get; set; } = false;
+        private static Config config = new Config();
+        private int currentRoundId = 0;
 
         public void RegisterEvents()
         {
             Exiled.Events.Handlers.Warhead.Detonated += OnDetonated;
+            Exiled.Events.Handlers.Server.RoundStarted += OnRoundStarted;
         }
+
         public void UnregisterEvents()
         {
             Exiled.Events.Handlers.Warhead.Detonated -= OnDetonated;
+            Exiled.Events.Handlers.Server.RoundStarted -= OnRoundStarted;
         }
 
-        private static Config config = new Config();
+        private void OnRoundStarted()
+        {
+            currentRoundId++;
+            Log.Info($"[SurfaceBoom] 新しいラウンドが開始されました。RoundID: {currentRoundId}");
+        }
 
-        private int currentRoundId = 0;
         public void OnDetonated()
         {
             int roundIdAtDetonation = currentRoundId;
-
             Log.Info("[Warhead] トリガーされました");
-
             int time = config.Time;
-
             if (Round.InProgress)
             {
                 int time1 = time - 13;
@@ -50,7 +55,6 @@ namespace SurfaceBoomEventHandler
                         translation: "<color=red><< 警告。地上爆破シーケンスが開始されます。 >></color>");
                     }
                 });
-
                 Timing.CallDelayed(time, () =>
                 {
                     if (Round.InProgress && roundIdAtDetonation == currentRoundId)

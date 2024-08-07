@@ -10,7 +10,7 @@ using Exiled.API.Features;
 using Exiled.Events;
 using Config = SurfaceBoomConfig.Config;
 
-namespace SurfaceBloom
+namespace SurfaceBoom
 {
     public class main : Plugin<Config>
     {

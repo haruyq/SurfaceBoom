@@ -7,8 +7,8 @@
     <ProjectGuid>{576FB505-9399-4F60-8647-969C8E869FEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SurfaceBloom</RootNamespace>
-    <AssemblyName>SurfaceBloom</AssemblyName>
+    <RootNamespace>SurfaceBoom</RootNamespace>
+    <AssemblyName>SurfaceBoom</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
